@@ -33,6 +33,12 @@ settlement_days = 1
 face_amount = 100
 coupon_frequency = ql.Period(ql.Semiannual)
 
+print("rates_deop: ", rates_depo)
+print("maturities_depo: ", maturities_depo)
+print("bond prices: ", prices)
+print("bond coupons: ", coupons)
+print("bond maturities: ", maturities)
+
 depo_helpers = [ql.DepositRateHelper(ql.QuoteHandle(ql.SimpleQuote(r/100.0)),
 m,
 settlement_days,
